@@ -1,20 +1,13 @@
 ---
 deployment:
   tasks:
-    - /bin/echo "Starting deployment for vendor-frontend"
+    - /bin/echo "=== Deploying vendor-frontend ==="
 
-    # Install dependencies
-    - /usr/local/bin/npm install
+    - /bin/npm install
+    - /bin/npm run build
 
-    # Build
-    - /usr/local/bin/npm run build || { echo "React build failed"; exit 1; }
+    - /bin/mkdir -p /home/fuma/public_html/fumavendor
 
-    # Deployment path
-    - export DEPLOYPATH=/home/USERNAME/public_html/fumavendor/
+    - /bin/rsync -av --delete build/ /home/fuma/public_html/fumavendor/
 
-    - /bin/mkdir -p $DEPLOYPATH
-
-    # Copy compiled frontend
-    - /bin/rsync -av --delete build/ $DEPLOYPATH
-
-    - /bin/echo "Deployment finished for vendor-frontend"
+    - /bin/echo "=== vendor-frontend deploy complete ==="
