@@ -1,0 +1,849 @@
+/* ==================== */
+/* UNIVERSAL & RESET    */
+/* ==================== */
+* {
+  box-sizing: border-box;
+  /* text-transform: capitalize; */
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ==================== */
+/* ANIMATIONS           */
+/* ==================== */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==================== */
+/* MEDIA QUERIES        */
+/* ==================== */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* ==================== */
+/* APP COMPONENTS       */
+/* ==================== */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* ==================== */
+/* BUTTONS              */
+/* ==================== */
+.headerLogout-btn {
+  /* background-color: #ffffff;
+    box-shadow: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0px 10px; */
+  font-family: sans-serif;
+  border: none;
+}
+
+/* ==================== */
+/* NAVIGATION           */
+/* ==================== */
+.nav-link {
+  padding: 0px;
+}
+.nav-icon {
+  width: 17px;
+  height: 17px;
+}
+.nav-item{
+  font-size: 13px;
+  font-weight: 550;
+}
+
+/* ==================== */
+/* LAYOUT               */
+/* ==================== */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+}
+
+/* ==================== */
+/* UTILITY CLASSES      */
+/* ==================== */
+.d-block {
+  display: block !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+/* ==================== */
+/* FORM ELEMENTS        */
+/* ==================== */
+.input_group_addon{
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  background-color:  #0c4461;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+}
+
+.form-control{
+  border-left: none;
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.add_vender_logo{
+  height: 35px;
+}
+
+.lb_name{
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* AddVendor.css */
+/* General Styling */
+  
+  /* Active Checkbox */
+  .form-check-input:checked {
+    background-color: #78B833;
+    border-color: #78B833;
+  }
+  
+  .form-check-label {
+   
+  }
+
+/* ==================== */
+/* RADIO BUTTONS        */
+/* ==================== */
+.radio-group {
+  display: flex;
+  margin: 20px;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+  display: none;
+}
+
+.radio-checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.radio-container input[type="radio"]:checked + .radio-checkmark {
+  background-color: #0c4461;
+}
+
+.radio-checkmark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.radio-container input[type="radio"]:checked + .radio-checkmark::after {
+  opacity: 1;
+}
+
+/* ==================== */
+/* TABLES               */
+/* ==================== */
+.table-style {
+  border-radius: 25px;
+}
+
+/* ==================== */
+/* TYPOGRAPHY           */
+/* ==================== */
+.all-heading {
+  font-family: "Plus Jakarta Display", sans-serif;
+  font-weight: bold;
+  color: #0c4461;
+}
+
+.sub-heading {
+  font-family: "Plus Jakarta Display", sans-serif;
+  color: #9fa6b2;
+  margin-left: 3px;
+  font-size: 14px;
+}
+
+/* ==================== */
+/* DASHBOARD            */
+/* ==================== */
+.dashboard-background {
+  /* 
+    background: rgb(36,37,63);
+    background: radial-gradient(circle, rgba(83, 89, 255, 0.79) 1%, rgb(131, 182, 232) 45%, rgb(187, 195, 232) 100%);
+     */
+  border: none;
+}
+
+.dashbord-card-logo {
+  color: white;
+}
+/* .dashboard-background {
+    background: linear-gradient(
+      135deg,
+      rgba(3, 22, 31, 0.9) ,    
+      rgba(15, 74, 103, 0.8) ,   
+  
+    );
+   
+  
+    
+  } */
+
+.menu_theme {
+  background:#ffffff;
+  border: none;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-background {
+  background: rgba(240, 239, 244, 0);
+  background: linear-gradient(
+    179deg,
+    rgba(25, 24, 48, 0) 0%,
+    rgba(12, 69, 97, 0.015) 49%
+  );
+  border: none;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================== */
+/* THEMES               */
+/* ==================== */
+/* Light Theme */
+body.light-theme {
+  --background-color: #f4f6f9;
+  --text-color: #343a40;
+  --card-background: #ffffff;
+  --card-border: #dee2e6;
+}
+
+body.light-theme .card {
+  background-color: var(--card-background);
+  border-color: var(--card-border);
+}
+
+/* Dark Theme */
+body.dark-theme {
+  --background-color: #212529;
+  --text-color: #e9ecef;
+  --card-background: #343a40;
+  --card-border: #495057;
+}
+
+body.dark-theme .card {
+  background-color: var(--card-background);
+  border-color: var(--card-border);
+}
+
+/* General Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.blur-card {
+  border: 2px white;
+  margin: 10px;
+  background: rgb(25, 24, 48);
+  background: linear-gradient(
+    179deg,
+    rgba(25, 24, 48, 1) 0%,
+    rgba(12, 68, 97, 1) 49%
+  );
+  backdrop-filter: blur(1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.table-rounded {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-rounded th,
+.table-rounded td {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-rounded th {
+  background-color: #f8f9fa;
+}
+
+.main-sidebar {
+  background-color: #ffffff !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border: none;
+  /* padding: 20px 8px 30px 11px; */
+}
+
+.user-panel{
+  height: 60px;
+  background-color: #003AAF;
+  color: #ffffff;
+}
+.app-background {
+  /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
+  background-color: #f4f6f9;
+}
+
+/* ==================== */
+/* PAGINATION           */
+/* ==================== */
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #0c4461;
+  border-color: #0c4461;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  color: red;
+}
+
+.dataTables_wrapper .dataTables_paginate a {
+  background-color: #0c4461;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  /* Change the hover color if desired */
+}
+
+.page-item.active .page-link {
+  color: #fff;
+  /* background-color: #007bff; */
+  border-color: #007bff;
+}
+h1 {
+  font-size: 28px;
+}
+
+/* ==================== */
+/* DATE RANGE PICKER    */
+/* ==================== */
+.date-range-selector {
+  position: relative;
+}
+
+.date-range-input {
+  width: 300px;
+  padding: 8px;
+}
+
+.date-range-dropdown {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 300px;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+
+.date-range-dropdown li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.date-range-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+/* ==================== */
+/* FORM CONTROLS        */
+/* ==================== */
+.custom-size-textsize {
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eeeeee00;
+  border: 1px solid #ccc;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  line-height: 24px !important;
+  padding: 0px 10px;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  line-height: 24px !important;
+}
+
+.select2-container--default .select2-search__field:focus {
+  outline: 0;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.select2-container--default .select2-search__field {
+  border: none !important;
+}
+
+.number input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.page-item.active .page-link {
+  color: #fff !important;
+  background-color: #0c4461 !important;
+  border-color: #000 !important;
+}
+
+.menu-options {
+  font-size: 13px;
+}
+
+.menu-name {
+  font-size: 15px;
+  color: #333;
+}
+
+:root {
+  --primary-color: #0c4461;
+  --secondary-color: #78b833;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --button-text-color: #fff;
+}
+
+/* ==================== */
+/* BUTTON STYLES        */
+/* ==================== */
+.btn-edit {
+  border: 1px solid rgb(116, 128, 255) !important;
+  color: #7480ff !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+  margin-right: 8px !important;
+  font-size: 0.75rem !important;
+  height: 1.5rem !important;
+  min-height: 1.5rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  background-color: transparent !important;
+}
+
+.btn-edit:hover {
+  background-color: #7480ff !important;
+  color: black !important;
+}
+
+.btn-edit:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(107, 114, 128, 0.5);
+}
+
+.btn-view {
+  border: 1px solid #00b6ff !important;
+  color: #00b6ff !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+  margin-right: 8px !important;
+  font-size: 0.75rem !important;
+  height: 1.5rem !important;
+  min-height: 1.5rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  background-color: transparent !important;
+}
+
+.btn-AcceptB{
+  border: 1px solid #198754 !important;
+  color: #198754 !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+  margin-right: 8px !important;
+  font-size: 0.75rem !important;
+  height: 1.5rem !important;
+  min-height: 1.5rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  background-color: transparent !important;
+}
+
+.btn-AcceptB:hover {
+  background-color: #198754 !important;
+  color: black !important;
+}
+.btn-RejectB{
+  border: 1px solid #87191e !important;
+  color: #87191e !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+  margin-right: 8px !important;
+  font-size: 0.75rem !important;
+  height: 1.5rem !important;
+  min-height: 1.5rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  background-color: transparent !important;
+}
+
+.btn-RejectB:hover {
+  background-color: #87191e !important;
+  color: black !important;
+}
+
+.btn-ViewB{
+  border: 1px solid #ff6700 !important;
+  color: #ff6700 !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+  margin-right: 8px !important;
+  font-size: 0.75rem !important;
+  height: 1.5rem !important;
+  min-height: 1.5rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  background-color: transparent !important;
+}
+
+.btn-ViewB:hover {
+  background-color: #ff6700 !important;
+  color: black !important;
+}
+
+.btn-view:hover {
+  color: black !important;
+  background-color: #00b6ff !important;
+}
+
+.btn-view:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.btn-delete {
+  border: 1px solid #ff0000 !important;
+  color: #ff0000 !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+  margin-right: 8px !important;
+  font-size: 0.75rem !important;
+  height: 1.5rem !important;
+  min-height: 1.5rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  background-color: transparent !important;
+}
+
+.btn-delete svg {
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-delete:hover {
+  background-color: #ff0000;
+  color: black;
+}
+
+.btn-delete:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.5);
+}
+
+.btn-add {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  padding: 8px 20px !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+  margin-right: 20px !important;
+  margin-top: 10px !important;
+}
+.btn-add:hover {
+  background-color: var(--primary-color) !important;
+  opacity: 0.9 !important;
+  color: #f5f5f5 !important;
+}
+.btn-submit {
+  background-color: var(--primary-color);
+  color: #f5f5f5;
+}
+
+.btn-submit:hover {
+  border: 1px solid gray;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  color: #f5f5f5;
+}
+.btn-save {
+  background-color: var(--primary-color) !important;
+  color: #f5f5f5 !important;
+}
+
+.btn-save:hover {
+  border: 1px solid gray;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  color: #f5f5f5;
+}
+
+/* ==================== */
+/* CARD STYLES          */
+/* ==================== */
+.card-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* ==================== */
+/* DATA TABLES          */
+/* ==================== */
+.dataTables_wrapper .dataTables_filter {
+  text-align: right;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  width: 50px;
+}
+
+.cardHover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cardHover:hover {
+  transform: translateY(3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.Export-Btn {
+  border: 1px solid gray !important;
+  font-size: small !important;
+  border-radius: 10px !important;
+  padding: 10px !important;
+  line-height: 0% !important;
+  opacity: 0.8 !important;
+}
+
+.Export-Btn:hover {
+  border: 1px solid gray !important;
+  background-color: var(--primary-color) !important;
+  transition: 0.3s ease-in-out !important;
+  color: var(--button-text-color) !important;
+}
+
+/* ==================== */
+/* RESPONSIVE DESIGN    */
+/* ==================== */
+@media (max-width: 768px) {
+  .table-responsive {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .btn-export {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+  }
+}
+.btn-icon-only {
+  white-space: nowrap;
+}
+
+.table_style {
+  font-family: "Plus Jakarta Display", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .btn-icon-only .btn-text {
+    display: none;
+  }
+  .btn-icon-only .btn-icon {
+    margin-right: 5px;
+  }
+}
+
+/* ==================== */
+/* THEME COLORS         */
+/* ==================== */
+.table {
+  background-color: var(--background-color);
+}
+
+.table thead th,
+.btn-save,
+.btn-add,
+.btn-submit,
+.theme-color {
+  background-color: #0c4461;
+  color: var(--button-text-color);
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #e9ecef;
+}
+
+.date-range-dropdown {
+  position: absolute;
+  z-index: 1000;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+  position: relative;
+}
+
+@media only screen and (max-width: 978px) {
+  .menu-options {
+    font-size: 11px;
+  }
+}
+
+/* ==================== */
+/* INVOICE BUTTON       */
+/* ==================== */
+.invoice-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.invoice-button:hover {
+  background-color: #45a049;
+}
+
+/* ==================== */
+/* MENU HOVER STATES    */
+/* ==================== */
+.nav-item > .nav-link:hover {
+  background-color: rgba(0, 64, 193, 0.1) !important;
+}
+
+.nav-item > .nav-link:hover i,
+.nav-item > .nav-link:hover p {
+  color: black !important;
+}
+
+.nav-treeview .nav-item .nav-link:hover {
+  background-color: rgba(0, 64, 193, 0.1) !important;
+}
+
+.nav-treeview .nav-item .nav-link:hover,
+.nav-treeview .nav-item .nav-link:hover i {
+  color: black !important;
+}

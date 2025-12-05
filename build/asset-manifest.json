@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/fumavendor/static/css/main.d66217ba.css",
+    "main.js": "/fumavendor/static/js/main.492ba4d0.js",
+    "static/js/239.b6d1705a.chunk.js": "/fumavendor/static/js/239.b6d1705a.chunk.js",
+    "static/js/213.5d3d65b1.chunk.js": "/fumavendor/static/js/213.5d3d65b1.chunk.js",
+    "static/js/455.18fa72e2.chunk.js": "/fumavendor/static/js/455.18fa72e2.chunk.js",
+    "static/js/453.93fc0d3b.chunk.js": "/fumavendor/static/js/453.93fc0d3b.chunk.js",
+    "static/media/fa-solid-900.svg": "/fumavendor/static/media/fa-solid-900.371dbce0dd46bd4d2033.svg",
+    "static/media/fa-brands-400.svg": "/fumavendor/static/media/fa-brands-400.e33e2cf6e02cac2ccb77.svg",
+    "static/media/login_background.png": "/fumavendor/static/media/login_background.2a304f8f8c50ab8eca1e.png",
+    "static/media/fa-solid-900.ttf": "/fumavendor/static/media/fa-solid-900.10ecefc282f2761808bf.ttf",
+    "static/media/fa-brands-400.ttf": "/fumavendor/static/media/fa-brands-400.ec82f282c7f54b637098.ttf",
+    "static/media/fa-solid-900.eot": "/fumavendor/static/media/fa-solid-900.3a24a60e7f9c6574864a.eot",
+    "static/media/fa-solid-900.woff2": "/fumavendor/static/media/fa-solid-900.3ceb50e7bcafb577367c.woff2",
+    "static/media/fa-regular-400.svg": "/fumavendor/static/media/fa-regular-400.06b9d19ced8d17f3d5cb.svg",
+    "static/media/fa-brands-400.eot": "/fumavendor/static/media/fa-brands-400.0fea24969112a781acd2.eot",
+    "static/media/fa-brands-400.woff2": "/fumavendor/static/media/fa-brands-400.c967a94cfbe2b06627ff.woff2",
+    "static/media/fa-solid-900.woff": "/fumavendor/static/media/fa-solid-900.46fdbd2d897f8824e63c.woff",
+    "static/media/fa-brands-400.woff": "/fumavendor/static/media/fa-brands-400.dc2cbadd690e1d4b2c9c.woff",
+    "static/media/fa-regular-400.ttf": "/fumavendor/static/media/fa-regular-400.1495f578452eb676f730.ttf",
+    "static/media/fa-regular-400.eot": "/fumavendor/static/media/fa-regular-400.08f9891a6f44d9546678.eot",
+    "static/media/fa-regular-400.woff2": "/fumavendor/static/media/fa-regular-400.1008b5226941c24f4468.woff2",
+    "static/media/fa-regular-400.woff": "/fumavendor/static/media/fa-regular-400.1069ea55beaa01060302.woff",
+    "static/media/summernote.eot": "/fumavendor/static/media/summernote.7a3f9776e32014a85289.eot",
+    "static/media/summernote.ttf": "/fumavendor/static/media/summernote.eb23b6b73e73ebe05c84.ttf",
+    "static/media/fa-v4compatibility.ttf": "/fumavendor/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/summernote.woff": "/fumavendor/static/media/summernote.f2bec4f2e5a73b537a3b.woff",
+    "static/media/summernote.woff2": "/fumavendor/static/media/summernote.f19578aed7aa19113900.woff2",
+    "static/media/fa-v4compatibility.woff2": "/fumavendor/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/fumavendor/index.html",
+    "main.d66217ba.css.map": "/fumavendor/static/css/main.d66217ba.css.map",
+    "main.492ba4d0.js.map": "/fumavendor/static/js/main.492ba4d0.js.map",
+    "239.b6d1705a.chunk.js.map": "/fumavendor/static/js/239.b6d1705a.chunk.js.map",
+    "213.5d3d65b1.chunk.js.map": "/fumavendor/static/js/213.5d3d65b1.chunk.js.map",
+    "455.18fa72e2.chunk.js.map": "/fumavendor/static/js/455.18fa72e2.chunk.js.map",
+    "453.93fc0d3b.chunk.js.map": "/fumavendor/static/js/453.93fc0d3b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d66217ba.css",
+    "static/js/main.492ba4d0.js"
+  ]
+}

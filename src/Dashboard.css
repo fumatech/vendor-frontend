@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+
+}
+
+
+.inner_box{
+    height: 200px;
+    width: 200px;
+}
+
+.D_vendor{
+    
+    background: url(../public/images/vendor.png) ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* This makes it a circle */
+    overflow: hidden; /* Ensures the content is clipped to the circle */
+}
+
+.D_customer{
+    
+    background: url(../public/images/customer.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%; /* This makes it a circle */
+    overflow: hidden;
+}
+
+
+.D_user{
+  
+    background: url(../public/images/user2.webp) ;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.D_sales{
+  
+    background: url(../public/images/sales.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%; /* This makes it a circle */
+    overflow: hidden;
+}
+.D_purchase{
+    
+    background: url(../public/images/purchase.png) ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* This makes it a circle */
+    overflow: hidden;
+}
+
+
+.D_expense{
+  
+    background: url(../public/images/expense.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%; /* This makes it a circle */
+    overflow: hidden;
+}
+.D_report{
+  
+    background: url(../public/images/report.png ) ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* This makes it a circle */
+    overflow: hidden;
+}
+
