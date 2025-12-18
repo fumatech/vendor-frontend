@@ -259,10 +259,10 @@ function EditAcceptedOrder() {
     const formattedDeliveryDate = deliveryDate.toISOString().split("T")[0];
 
     const orderItems = selectedProducts.map((product) => ({
-      productId: product.id,
+      productId: product.productId,
       productName: product.productName,
       productSku: product.sku,
-      productVariationId: product.variationId
+      productVariationId: product.productVariationId
         ? String(product.variationId)
         : null,
       productVariationName: product.variationValue,
