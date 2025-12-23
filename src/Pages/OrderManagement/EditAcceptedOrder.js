@@ -263,7 +263,7 @@ function EditAcceptedOrder() {
       productName: product.productName,
       productSku: product.sku,
       productVariationId: product.productVariationId
-        ? String(product.variationId)
+        ? String(product.productVariationId)
         : null,
       productVariationName: product.variationValue,
       quantity: product.quantity || 0,
@@ -426,7 +426,6 @@ function EditAcceptedOrder() {
                             className="form-control w-100 ms-1 ms-md-0 py-3 rounded-1"
                             dateFormat="MM/dd/yyyy"
                             required
-                            readOnly
                             minDate={new Date()}
                             popperPlacement="top"
                           />

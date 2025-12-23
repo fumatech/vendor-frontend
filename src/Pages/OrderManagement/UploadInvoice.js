@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 function UploadInvoice() {
+  const navigate = useNavigate();
+  const [deliveryDate, setDeliveryDate] = useState();
   const { id } = useParams();
   const [vendor, setVendor] = useState("");
   const [referenceNumber, setReferenceNumber] = useState("");
@@ -39,6 +41,9 @@ function UploadInvoice() {
         setOrderID(purchase.purchaseOrderId);
         setAddedBy(purchase.addedBy);
         setOrderDate(new Date(purchase.orderDate));
+        if (purchase?.deliveryDate && !isNaN(new Date(purchase.deliveryDate))) {
+          setDeliveryDate(new Date(purchase.deliveryDate));
+        }
         setLocation(purchase.location);
         setAdditionalNotes(purchase.additionalNotes);
 
@@ -197,7 +202,9 @@ function UploadInvoice() {
       productId: product.productId,
       productName: product.productName,
       productSku: product.sku,
-      productVariationId: product.productVariationId,
+      productVariationId: product.productVariationId
+        ? String(product.productVariationId)
+        : null,
       productVariationName: product.variationValue,
       quantity: product.quantity,
       updatedQuantity: product.updatedQuantity || product.quantity,
@@ -210,6 +217,9 @@ function UploadInvoice() {
       referenceNumber,
       addedBy,
       orderDate: orderDate ? orderDate.toISOString().split("T")[0] : null,
+      deliveryDate: deliveryDate
+        ? deliveryDate.toISOString().split("T")[0]
+        : null,
       location,
       totalItems: selectedProducts.reduce(
         (total, product) => total + product.quantity,
@@ -247,6 +257,7 @@ function UploadInvoice() {
         alert("Failed to update order. Please check your inputs.");
       } else {
         alert("Purchase updated successfully!");
+        navigate("/ShipOrders");
       }
     } catch (error) {
       console.error("Error:", error);
