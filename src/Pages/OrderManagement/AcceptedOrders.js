@@ -463,7 +463,7 @@ const AcceptedOrders = ({ vendorFirmName }) => {
                       value={entriesPerPage}
                       onChange={handleEntriesChange}
                     >
-                                            <option value={10}>10</option>
+                      <option value={10}>10</option>
                       <option value={25}>25</option>
                       <option value={50}>50</option>
                       <option value={75}>75</option>
@@ -557,7 +557,7 @@ const AcceptedOrders = ({ vendorFirmName }) => {
                         )}
                         {columnsVisibility.orderId && <th>Order ID</th>}
                         {columnsVisibility.expectedDate && (
-                          <th>Expected Date</th>
+                          <th>Expected Delivery Date</th>
                         )}
                         {columnsVisibility.referenceNumber && (
                           <th>Reference Number</th>

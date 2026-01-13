@@ -475,7 +475,7 @@ const ShipOrders = ({ vendorFirmName }) => {
                         )}
                         {columnsVisibility.orderId && <th>Order ID</th>}
                         {columnsVisibility.expectedDate && (
-                          <th>Expected Date</th>
+                          <th>Expected Delivery Date</th>
                         )}
                         {columnsVisibility.referenceNumber && (
                           <th>Reference Number</th>
@@ -584,12 +584,12 @@ const ShipOrders = ({ vendorFirmName }) => {
                                 >
                                   <i className="fas fa-edit"></i> Print
                                 </button>
-                                <button
+                                {/* <button
                                   className="btn btn-view btn-sm mr-2"
                                   onClick={() => handleViewClick(order.id)}
                                 >
                                   <i className="fas fa-eye"></i> View
-                                </button>
+                                </button> */}
                               </td>
                             )}
                           </tr>

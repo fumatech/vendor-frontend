@@ -324,7 +324,7 @@ function ViewRejectedOrders() {
                       <div className="col-md-4">
                         <div className="form-group d-flex flex-row  flex-md-column ">
                           <label htmlFor="transaction_date">
-                            Delivery Date
+                            Expected Delivery Date
                           </label>
                           <DatePicker
                             selected={deliveryDate}

@@ -249,7 +249,7 @@ const RejectedOrders = ({ vendorFirmName }) => {
   const handleAcceptBack = async (order) => {
     // Log the order to inspect its structure
     const status = 1; // 1 for accept (as per the original code
-          
+
     try {
       const response = await fetch(
         `${process.env.REACT_APP_BASE_URL}/purchaseorder/updateStatus/${order.id}`,
@@ -471,7 +471,7 @@ const RejectedOrders = ({ vendorFirmName }) => {
                         )}
                         {columnsVisibility.orderId && <th>Order ID</th>}
                         {columnsVisibility.expectedDate && (
-                          <th>Expected Date</th>
+                          <th>Expected Delivery Date</th>
                         )}
                         {columnsVisibility.referenceNumber && (
                           <th>Reference Number</th>

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fumavendor/static/css/main.ee97feab.css",
-    "main.js": "/fumavendor/static/js/main.8e0933af.js",
+    "main.js": "/fumavendor/static/js/main.6042643e.js",
     "static/js/239.b6d1705a.chunk.js": "/fumavendor/static/js/239.b6d1705a.chunk.js",
     "static/js/213.5d3d65b1.chunk.js": "/fumavendor/static/js/213.5d3d65b1.chunk.js",
     "static/js/455.18fa72e2.chunk.js": "/fumavendor/static/js/455.18fa72e2.chunk.js",
@@ -30,7 +30,7 @@
     "static/media/fa-v4compatibility.woff2": "/fumavendor/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/fumavendor/index.html",
     "main.ee97feab.css.map": "/fumavendor/static/css/main.ee97feab.css.map",
-    "main.8e0933af.js.map": "/fumavendor/static/js/main.8e0933af.js.map",
+    "main.6042643e.js.map": "/fumavendor/static/js/main.6042643e.js.map",
     "239.b6d1705a.chunk.js.map": "/fumavendor/static/js/239.b6d1705a.chunk.js.map",
     "213.5d3d65b1.chunk.js.map": "/fumavendor/static/js/213.5d3d65b1.chunk.js.map",
     "455.18fa72e2.chunk.js.map": "/fumavendor/static/js/455.18fa72e2.chunk.js.map",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.ee97feab.css",
-    "static/js/main.8e0933af.js"
+    "static/js/main.6042643e.js"
   ]
 }

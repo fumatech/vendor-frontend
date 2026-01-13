@@ -517,7 +517,7 @@ const ViewOrders = ({ vendorFirmName }) => {
                         )}
                         {columnsVisibility.orderId && <th>Order ID</th>}
                         {columnsVisibility.expectedDate && (
-                          <th>Expected Date</th>
+                          <th>Expected Delivery Date</th>
                         )}
                         {columnsVisibility.referenceNumber && (
                           <th>Reference Number</th>
