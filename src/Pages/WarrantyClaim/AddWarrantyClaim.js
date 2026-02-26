@@ -4,6 +4,7 @@ import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
+import Select from "react-select";
 
 function AddWarrantyClaim() {
   const navigate = useNavigate();
@@ -26,6 +27,16 @@ function AddWarrantyClaim() {
   const [totalUnits, setTotalUnits] = useState(0); // New state for total units
   const [addedBy, setAddedBy] = useState("");
   const [userEmail, setUserEmail] = useState(null);
+
+  const businessLocationOptions = [{ value: "FUMA", label: "FUMA" }];
+  const selectMenuProps = {
+    menuPortalTarget: document.body,
+    menuPosition: "fixed",
+    styles: {
+      menuPortal: (base) => ({ ...base, zIndex: 9999 }),
+      menu: (base) => ({ ...base, zIndex: 9999 }),
+    },
+  };
   useEffect(() => {
     const email = sessionStorage.getItem("userEmail");
     if (email) {
@@ -158,6 +169,10 @@ function AddWarrantyClaim() {
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (!businessLocation) {
+      alert("Business Location is required.");
+      return;
+    }
 
     // Prepare stock adjustment data for warranty claim
     const stockAdjustmentData = {
@@ -297,19 +312,23 @@ function AddWarrantyClaim() {
                         <label htmlFor="businessLocation">
                           Business Location:*
                         </label>
-                        <select
-                          id="businessLocation"
-                          name="businessLocation"
-                          className="form-control"
-                          required
-                          value={businessLocation}
-                          onChange={handleBusinessLocationChange}
-                        >
-                          <option value="" disabled>
-                            Please Select
-                          </option>
-                          <option value="FUMA">FUMA</option>
-                        </select>
+                        <Select
+                          inputId="businessLocation"
+                          options={businessLocationOptions}
+                          value={
+                            businessLocationOptions.find(
+                              (option) =>
+                                String(option.value) ===
+                                String(businessLocation)
+                            ) || null
+                          }
+                          onChange={(selectedOption) =>
+                            setBusinessLocation(selectedOption?.value || "")
+                          }
+                          placeholder="Please Select"
+                          isSearchable
+                          {...selectMenuProps}
+                        />
                       </div>{" "}
                       <div className="form-group col-md-3">
                         <label htmlFor="referenceNumber">Reference No:</label>
