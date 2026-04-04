@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "./BusinessDetails.css";
 
 function BusinessDetails() {
   const navigate = useNavigate();
@@ -56,6 +57,15 @@ function BusinessDetails() {
     return <div className="text-center py-5">Loading business details...</div>;
   }
 
+  const detailRows = [
+    { label: "Vendor ID", value: vendorData.vendorId },
+    { label: "Firm Name", value: vendorData.firmName },
+    { label: "Shop Act Number", value: vendorData.shopActNumber },
+    { label: "CIN Number", value: vendorData.cinNumber },
+    { label: "Tax/GST Number", value: vendorData.taxOrGstNumber },
+    { label: "PAN Number", value: vendorData.panNumber },
+  ];
+
   return (
     <div className="wrapper">
       <div className="content-wrapper">
@@ -75,104 +85,25 @@ function BusinessDetails() {
 
         <section className="content">
           <div className="container-fluid">
-            <div className="card rounded-4 border-0 cardHover">
+            <div className="card rounded-4 border-0 cardHover business-details-card">
               <div className="card-body">
-                <div className="row">
-                  <div className="col-md-4 mb-3">
-                    <div className="form-group">
-                      <label>Vendor ID</label>
-                      <div className="input-group">
-                        <span className="input-group-text">
-                          <i className="fa fa-id-card"></i>
-                        </span>
-                        <input
-                          className="form-control"
-                          value={vendorData.vendorId}
-                          readOnly
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-4 mb-3">
-                    <div className="form-group">
-                      <label>Firm Name</label>
-                      <div className="input-group">
-                        <span className="input-group-text">
-                          <i className="fa fa-building"></i>
-                        </span>
-                        <input
-                          className="form-control"
-                          value={vendorData.firmName}
-                          readOnly
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-4 mb-3">
-                    <div className="form-group">
-                      <label>Shop Act Number</label>
-                      <div className="input-group">
-                        <span className="input-group-text">
-                          <i className="fa fa-file-text"></i>
-                        </span>
-                        <input
-                          className="form-control"
-                          value={vendorData.shopActNumber}
-                          readOnly
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-4 mb-3">
-                    <div className="form-group">
-                      <label>CIN Number</label>
-                      <div className="input-group">
-                        <span className="input-group-text">
-                          <i className="fa fa-file-text"></i>
-                        </span>
-                        <input
-                          className="form-control"
-                          value={vendorData.cinNumber}
-                          readOnly
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-4 mb-3">
-                    <div className="form-group">
-                      <label>Tax/GST Number</label>
-                      <div className="input-group">
-                        <span className="input-group-text">
-                          <i className="fa fa-file-text"></i>
-                        </span>
-                        <input
-                          className="form-control"
-                          value={vendorData.taxOrGstNumber}
-                          readOnly
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-4 mb-3">
-                    <div className="form-group">
-                      <label>PAN Number</label>
-                      <div className="input-group">
-                        <span className="input-group-text">
-                          <i className="fa fa-file-text"></i>
-                        </span>
-                        <input
-                          className="form-control"
-                          value={vendorData.panNumber}
-                          readOnly
-                        />
-                      </div>
-                    </div>
-                  </div>
+                <div className="business-details-table-wrapper">
+                  <table className="table business-details-table mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">Business Field</th>
+                        <th scope="col">Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {detailRows.map((row) => (
+                        <tr key={row.label}>
+                          <td data-label="Business Field">{row.label}</td>
+                          <td data-label="Details">{row.value || "N/A"}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
