@@ -185,8 +185,8 @@ const Calculator = ({ onClose, buttonRef }) => {
                 btn === "="
                   ? "#007bff"
                   : ["AC", "CE", "%", "÷"].includes(btn)
-                  ? "#e9ecef"
-                  : "#ffffff",
+                    ? "#e9ecef"
+                    : "#ffffff",
               color: btn === "=" ? "#ffffff" : "#212529",
               cursor: "pointer",
               transition: "all 0.2s",
@@ -202,8 +202,8 @@ const Calculator = ({ onClose, buttonRef }) => {
                 btn === "="
                   ? "#007bff"
                   : ["AC", "CE", "%", "÷"].includes(btn)
-                  ? "#e9ecef"
-                  : "#ffffff";
+                    ? "#e9ecef"
+                    : "#ffffff";
             }}
           >
             {btn}
@@ -350,7 +350,7 @@ const Header = ({ vendorFirmName }) => {
   const currentDate = new Date().toLocaleDateString("en-US");
 
   const navItemStyle = {
-    backgroundColor: "#003cb3",
+    backgroundColor: "transparent",
     padding: "6px 12px",
     borderRadius: "8px",
     marginLeft: "8px",
@@ -359,14 +359,14 @@ const Header = ({ vendorFirmName }) => {
     color: "#fff",
     fontWeight: "500",
     cursor: "pointer",
-    border: "1px solid rgba(255,255,255,0.2)",
+    border: "1px solid rgba(255,255,255,0.35)",
     transition: "all 0.3s ease",
     height: "32px",
     boxSizing: "border-box",
   };
 
   const navItemHover = {
-    backgroundColor: "#0050d0",
+    backgroundColor: "rgba(255,255,255,0.12)",
   };
 
   const iconStyle = {
@@ -379,14 +379,14 @@ const Header = ({ vendorFirmName }) => {
   };
 
   const handleMouseLeave = (e) => {
-    Object.assign(e.currentTarget.style, { backgroundColor: "#003cb3" });
+    Object.assign(e.currentTarget.style, { backgroundColor: "transparent" });
   };
 
   return (
     <>
       <nav
         style={{
-          backgroundColor: "#003cb3",
+          backgroundColor: "#0c4461",
           padding: "10px 20px",
           display: "flex",
           justifyContent: "space-between",
@@ -405,9 +405,9 @@ const Header = ({ vendorFirmName }) => {
 
         {/* Center-aligned nav items */}
         <div style={{ display: "flex", alignItems: "center" }}>
-      
 
-     
+
+
 
           {/* Current Date */}
           <div
